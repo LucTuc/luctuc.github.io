@@ -1,0 +1,237 @@
+/* General Reset and Body Styling */
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: #f4f4f4;
+}
+
+/* Header Styling */
+header {
+    width: 90%;
+    background: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-top: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Section Styling */
+section {
+    width: 75%;
+    max-width: 4000px;
+    padding: 20px;
+    margin-top: 20px;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+a {
+    color: #0056b3; /* Set link color similar to the rest of the text */
+    text-decoration: none; /* Removes underline from links */
+}
+
+a:hover, .project-links a:focus {
+    text-decoration: underline; /* Adds underline on hover for better visibility */
+    color: #0056b3; /* Change as needed to match the site's theme */
+}
+
+.about-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start; /* Aligns items to the start, preserving space as needed */
+    flex-wrap: nowrap;
+    margin-top: 20px;
+    flex-grow: 0;
+}
+
+.about-img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    background: #fff;
+    margin-right: 70px;
+    flex-shrink: 0;  /* Prevents the image from shrinking */
+    min-width: 250px;  /* Ensures minimum width is maintained */
+    min-height: 250px;  /* Ensures minimum height is maintained */
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column; /* Stacks all p tags vertically */
+    justify-content: flex-start; /* Aligns content to the top */
+}
+
+/* Project Styling for Portfolio Section */
+.project {
+    display: flex;
+    align-items: flex-start; /* Keeps items aligned at the top */
+    background: white;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    height: 300px; /* Fixed height, adjust as needed */
+    overflow: hidden; /* Hides any overflow, optional based on your design preference */
+}
+
+.portfolio-img {
+    width: 25%;
+    height: auto;
+    align-items: center;
+    object-fit: cover;
+    margin-right: 20px;
+    margin-top: auto; /* Auto margin for top and bottom centers the image vertically */
+    margin-bottom: auto;
+}
+
+.project-info {
+    flex: 1; /* Allows this div to take up the remaining space */
+}
+
+.project-info p {
+    margin-top: 0; /* Removes default top margin */
+    margin-bottom: 4px; /* Standardizes bottom margin */
+    margin-left: 20px;
+}
+
+.project-title {
+    font-weight: bold;
+    font-size: 1.2em; /* Increases the font size for the title */
+    margin-bottom: 8px; /* A slightly larger bottom margin after the title */
+}
+
+.project-conference {
+    font-style: italic;
+    margin-bottom: 4px; /* Keeps a small margin after the conference */
+}
+
+.project-authors {
+    margin-bottom: 4px; /* Small margin after the authors list */
+}
+
+.project-authors strong {
+    font-weight: bold; /* Ensures names in bold within the authors list */
+}
+
+.project-description {
+    margin-top: 4px; /* A bit more space before the description starts */
+    margin-bottom: 4px; /* Consistent bottom spacing */
+    font-size: 0.97em;
+}
+
+.project-links a {
+    color: #0056b3; /* Set link color similar to the rest of the text */
+    text-decoration: none; /* Removes underline from links */
+}
+
+.project-links a:hover, .project-links a:focus {
+    text-decoration: underline; /* Adds underline on hover for better visibility */
+    color: #0056b3; /* Change as needed to match the site's theme */
+}
+
+/* Footer Styling */
+footer {
+    width: 90%;
+    background: #fff;
+    text-align: center;
+    padding: 10px 0;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+    position: static; /* To allow footer to be part of the document flow */
+    margin-top: auto; /* Pushes the footer to the bottom of the viewport */
+}
+
+/* Form Styling */
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    /* Additional styling */
+}
+
+#contact {
+    text-align: center; /* Centering the content */
+    padding: 20px;
+    margin-top: 20px;
+    padding-bottom: 50px;
+    font-size: 1.2em;
+}
+
+#contact p {
+    margin: 5px 0; /* Adds a little vertical spacing */
+}
+
+.social-links a {
+    margin: 0 10px; /* Space out the icons */
+    display: inline-block; /* Line up icons horizontally */
+}
+
+.social-links img {
+    width: 24px; /* Adjust size as needed */
+    height: auto;
+    vertical-align: middle; /* Aligns icons with text vertically */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    nav ul li {
+        margin: 0 10px; /* Reduce margin for smaller screens */
+    }
+
+    .about-img {
+        width: 100%; /* Full width images on smaller devices */
+        height: auto;
+        margin-right: 0; /* Remove right margin on smaller screens */
+    }
+
+    .project {
+        flex-direction: column; /* Stacks image and text vertically on small screens */
+    }
+
+    .portfolio-img {
+        width: 80%; /* Adjusts image size for smaller screens */
+        margin-bottom: 20px; /* Space between image and text */
+    }
+
+    .project p {
+        margin-right: 0; /* Removes right margin on smaller screens */
+    }
+}
