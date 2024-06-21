@@ -6,39 +6,43 @@
     <meta name="description" content="Personal website of Luc von Niederhäusern, Research Software Engineer at IBM Research Zurich, focusing on geometric deep learning and graph-based reasoning.">
     <title>Luc von Niederhäusern</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <header>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Publications</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="hero">
             <h1>Luc von Niederhäusern</h1>
-            <nav>
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#portfolio">Publications</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
-        
-        <main>
-            <section id="about">
-                <h2>About Me</h2>
-                <article class="about-container">
-                    <img src="./imgs/crimbing.JPG" alt="Luc von Niederhäusern" class="about-img">
-                    <div class="text-container">
-                        <p>I'm a Research Software Engineer at <a href="https://research.ibm.com/" target="_blank" rel="noopener noreferrer">IBM Research</a> in Zurich, Switzerland. I am broadly interested in <a href="https://geometricdeeplearning.com/" target="_blank" rel="noopener noreferrer">geometric deep learning</a> and graph-based reasoning for large multimodal models.</p>
-                        <p>Before joining IBM Research I completed my BSc and MSc degrees at <a href="https://ethz.ch/en.html" target="_blank" rel="noopener noreferrer">ETH Zurich</a>, both in Information Technology and Electrical Engineering. </p>
-                    </div>
-                </article>
-            </section>
+            <p>Research Software Engineer | Geometric Deep Learning | Graph-based Reasoning</p>
+        </section>
 
-            <section id="portfolio">
-                <h2>Publications</h2>
+        <section id="about">
+            <div class="about-container">
+                <img src="./imgs/crimbing.JPG" alt="Luc von Niederhäusern" class="about-img">
+                <div class="text-container">
+                    <h2>About Me</h2>
+                    <p>I'm a Research Software Engineer at <a href="https://research.ibm.com/" target="_blank" rel="noopener noreferrer">IBM Research</a> in Zurich, Switzerland. I am broadly interested in <a href="https://geometricdeeplearning.com/" target="_blank" rel="noopener noreferrer">geometric deep learning</a> and graph-based reasoning for large multimodal models.</p>
+                    <p>Before joining IBM Research I completed my BSc and MSc degrees at <a href="https://ethz.ch/en.html" target="_blank" rel="noopener noreferrer">ETH Zurich</a>, both in Information Technology and Electrical Engineering.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio">
+            <h2>Publications</h2>
+            <div class="projects-container">
                 <article class="project">
                     <img src="./imgs/PDGNN.png" alt="Provably Powerful Graph Neural Networks for Directed Multigraphs" class="portfolio-img">
                     <div class="project-info">
-                        <p class="project-title">Provably Powerful Graph Neural Networks for Directed Multigraphs</p>
+                        <h3 class="project-title">Provably Powerful Graph Neural Networks for Directed Multigraphs</h3>
                         <p class="project-conference"><em>AAAI 2024 [oral]</em></p>
                         <p class="project-authors">Béni Egressy, <strong>Luc von Niederhäusern</strong>, Jovan Blanusa, Erik Altman, Roger Wattenhofer, Kubilay Atasu</p>
                         <p class="project-description">We show that with a few simple adaptations to your favorite GNN architecture, you can detect any directed subgraph pattern. This leads to significant improvements in detecting financial fraud in large-scale transaction networks.</p>
@@ -48,35 +52,35 @@
                 <article class="project">
                     <img src="./imgs/AML.png" alt="Realistic synthetic financial transactions for anti-money laundering models" class="portfolio-img">
                     <div class="project-info">
-                        <p class="project-title">Realistic synthetic financial transactions for anti-money laundering models</p>
+                        <h3 class="project-title">Realistic synthetic financial transactions for anti-money laundering models</h3>
                         <p class="project-conference"><em>NeurIPS 2023</em></p>
                         <p class="project-authors">Erik Altman, Jovan Blanuša, <strong>Luc von Niederhäusern</strong>, Béni Egressy, Andreea Anghel, Kubilay Atasu</p>
                         <p class="project-description">We present <em>AMLworld</em>, a synthetic transaction generator that can realistically model money laundering. It does so on a very large scale (comparable to large international banks) and thus enables benchmarking models on realistic data volumes.</p>
                         <p class="project-links">[<a href="https://arxiv.org/abs/2306.16424" target="_blank" rel="noopener noreferrer">arXiv</a>, <a href="https://github.com/IBM/Multi-GNN" target="_blank" rel="noopener noreferrer">Code</a>]</p>
                     </div>
                 </article>
-            </section>
+            </div>
+        </section>
 
-            <section id="contact">
-                <h2>Contact</h2>
-                <p>Luc von Niederhäusern</p>
-                <p>lucvonniederhaeusern [at] gmail [dot] com</p>
-                <div class="social-links">
-                    <a href="https://scholar.google.com/citations?user=iW4b5cEAAAAJ&hl=en" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar profile">
-                        <img src="./imgs/graduation-cap.png" alt="Google Scholar icon">
-                    </a>
-                    <a href="https://twitter.com/luc_tucc" target="_blank" rel="noopener noreferrer" aria-label="Twitter profile">
-                        <img src="./imgs/twitter.png" alt="Twitter icon">
-                    </a>
-                    <a href="https://github.com/LucTuc" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
-                        <img src="./imgs/github.png" alt="GitHub icon">
-                    </a>
-                    <a href="https://www.linkedin.com/in/luc-von-niederhaeusern/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
-                        <img src="./imgs/linkedin.png" alt="LinkedIn icon">
-                    </a>
-                </div>
-            </section>
-        </main>
-    </div>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Luc von Niederhäusern</p>
+            <p>lucvonniederhaeusern [at] gmail [dot] com</p>
+            <div class="social-links">
+                <a href="https://scholar.google.com/citations?user=iW4b5cEAAAAJ&hl=en" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar profile">
+                    <img src="./imgs/graduation-cap.png" alt="Google Scholar icon">
+                </a>
+                <a href="https://twitter.com/luc_tucc" target="_blank" rel="noopener noreferrer" aria-label="Twitter profile">
+                    <img src="./imgs/twitter.png" alt="Twitter icon">
+                </a>
+                <a href="https://github.com/LucTuc" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
+                    <img src="./imgs/github.png" alt="GitHub icon">
+                </a>
+                <a href="https://www.linkedin.com/in/luc-von-niederhaeusern/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
+                    <img src="./imgs/linkedin.png" alt="LinkedIn icon">
+                </a>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
