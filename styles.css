@@ -4,6 +4,7 @@
     --bg-color: #f4f4f4;
     --card-bg: #fff;
     --shadow: 0 2px 5px rgba(0,0,0,0.1);
+    --max-width: 1200px;
   }
   
   * {
@@ -19,10 +20,24 @@
     background: var(--bg-color);
     display: flex;
     flex-direction: column;
+    align-items: center;
     min-height: 100vh;
   }
   
-  header, section, footer {
+  .container {
+    width: 100%;
+    max-width: var(--max-width);
+    padding: 0 20px;
+  }
+  
+  header, main, footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  header, section {
     width: 100%;
     padding: 20px;
     margin-bottom: 20px;
@@ -30,13 +45,10 @@
     box-shadow: var(--shadow);
   }
   
-  header {
-    text-align: center;
-  }
-  
   h1, h2 {
     font-family: 'Playfair Display', serif;
     margin-bottom: 20px;
+    text-align: center;
   }
   
   nav ul {
@@ -82,6 +94,7 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 30px;
+    align-items: center;
   }
   
   .portfolio-img {
@@ -89,6 +102,10 @@
     max-width: 300px;
     height: auto;
     margin-bottom: 20px;
+  }
+  
+  .project-info {
+    width: 100%;
   }
   
   .project-info p {
@@ -128,13 +145,10 @@
   }
   
   @media (min-width: 768px) {
-    body {
-      padding: 0 5%;
-    }
-  
     .about-container {
       flex-direction: row;
       align-items: flex-start;
+      justify-content: center;
     }
   
     .about-img {
@@ -155,7 +169,7 @@
   }
   
   @media (min-width: 1024px) {
-    body {
-      padding: 0 10%;
+    .container {
+      padding: 0;
     }
   }
